@@ -185,7 +185,7 @@ namespace Todddo.Tests.Controllers
                 (TodoApiModel)result.Value,
                 new TodoApiModelComparer()
             );
-            Assert.Equal(0, fixture.Repository.Values.Count);
+            Assert.Empty(fixture.Repository.Values);
         }
 
         [Fact]
@@ -202,7 +202,7 @@ namespace Todddo.Tests.Controllers
                 "not_found",
                 ((ApiErrorModel)result.Value).Code
             );
-            Assert.Equal(1, fixture.Repository.Values.Count);
+            Assert.Single(fixture.Repository.Values);
         }
     }
 

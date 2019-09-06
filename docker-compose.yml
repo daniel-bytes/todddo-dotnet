@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  todddo:
+    image: ${DOCKER_REGISTRY-}todddo
+    build:
+      context: .
+      dockerfile: Todddo/Dockerfile
+

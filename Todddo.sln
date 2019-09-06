@@ -8,7 +8,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5B3DB1B9-7BA3-4AD8-9060-602287A54F41}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
+		docker-compose.yml = docker-compose.yml
+		generate-cert.sh = generate-cert.sh
+		docker-compose.override.yml = docker-compose.override.yml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todddo.IntegrationTests", "Todddo.IntegrationTests\Todddo.IntegrationTests.csproj", "{F8DD1D8A-51A1-4945-AD12-6D9DD28B1EDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Todddo.ApiClient", "Todddo.ApiClient\Todddo.ApiClient.csproj", "{0E7DAF0F-5694-4E5B-B9AD-71E925D9B5E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +31,13 @@ Global
 		{ECD92316-5101-4E63-AD9B-12A3F8378933}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECD92316-5101-4E63-AD9B-12A3F8378933}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECD92316-5101-4E63-AD9B-12A3F8378933}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8DD1D8A-51A1-4945-AD12-6D9DD28B1EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8DD1D8A-51A1-4945-AD12-6D9DD28B1EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8DD1D8A-51A1-4945-AD12-6D9DD28B1EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8DD1D8A-51A1-4945-AD12-6D9DD28B1EDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E7DAF0F-5694-4E5B-B9AD-71E925D9B5E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E7DAF0F-5694-4E5B-B9AD-71E925D9B5E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E7DAF0F-5694-4E5B-B9AD-71E925D9B5E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E7DAF0F-5694-4E5B-B9AD-71E925D9B5E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
