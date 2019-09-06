@@ -35,3 +35,20 @@ curl -k https://localhost:44396/api/todo
 ```
 
 You should also be able to successfully execute the tests in `Todddo.IntegrationTests`.
+
+
+Swagger
+---
+
+To generate the Swagger client code in `Todddo.ApiClient` you will need to `npm install`
+and then run the code generator (make sure the application is running first via `docker-compose`):
+
+```
+cd Todddo.ApiClient
+npm install
+./node_modules/nswag/bin/nswag.js openapi2csclient \
+    /input:https://localhost:44396/swagger/v1/swagger.json \
+    /output:TodoApiClient.cs \
+    /classname:TodoApiClient \
+    /namespace:Todddo.ApiClient
+```
